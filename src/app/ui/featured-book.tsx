@@ -1,19 +1,16 @@
+import { Book } from "@/app/lib/definitions";
 import Link from "next/link";
 import { Key } from "react";
 
-export default function FeaturedBook({
-  key,
-  featuredBook,
-}: {
-  key: Key;
-  featuredBook: {
-    id: number;
-    title: string;
-    author: string;
-    description: string;
-  };
-}) {
-  const { id, title, author, description } = featuredBook;
+export default function FeaturedBook(
+  {
+    featuredBook,
+  }: {
+    featuredBook: Book;
+  },
+  key: Key
+) {
+  const { isbn, title, author, description } = featuredBook;
 
   return (
     <li
@@ -22,7 +19,7 @@ export default function FeaturedBook({
     >
       <Link
         className="flex gap-6 flex-col md:flex-row md:items-center "
-        href={`/catalog/${id}`}
+        href={`/catalog/${isbn}`}
       >
         <div className="aspect-[9/14] shrink-0 w-32 self-center md:selft-start rounded-md bg-secondary"></div>
         <div className="space-y-2">
