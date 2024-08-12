@@ -1,0 +1,114 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Whisper of Leaves",
+      "author": "Elena Blackwood",
+      "isbn": "978-1234567890",
+      "genre": "Literary Fiction",
+      "description": "A poignant tale of self-discovery set in a small forest town, where the rustling leaves hold secrets of the past.",
+      "coverImage": "/images/whisper-of-leaves.jpg",
+      "price": 16.99,
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Quantum Quandaries",
+      "author": "Dr. Samuel Hawke",
+      "isbn": "978-2345678901",
+      "genre": "Popular Science",
+      "description": "An accessible exploration of quantum mechanics and its mind-bending implications for our understanding of reality.",
+      "coverImage": "/images/quantum-quandaries.jpg",
+      "price": 22.5,
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Midnight's Serenade",
+      "author": "Jasmine Moon",
+      "isbn": "978-3456789012",
+      "genre": "Romance",
+      "description": "A passionate love story unfolds against the backdrop of New Orleans' vibrant jazz scene.",
+      "coverImage": "/images/midnights-serenade.jpg",
+      "price": 14.99,
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "The Code Breaker's Dilemma",
+      "author": "Alan Turing III",
+      "isbn": "978-4567890123",
+      "genre": "Thriller",
+      "description": "A race against time as a brilliant cryptographer unravels a complex conspiracy that threatens global security.",
+      "coverImage": "/images/code-breakers-dilemma.jpg",
+      "price": 18.99,
+      "featured": true
+    },
+    {
+      "id": 5,
+      "title": "Culinary Journeys",
+      "author": "Sofia Chen",
+      "isbn": "978-5678901234",
+      "genre": "Cookbook",
+      "description": "Embark on a gastronomic adventure with recipes and stories from hidden culinary gems around the world.",
+      "coverImage": "/images/culinary-journeys.jpg",
+      "price": 29.95,
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Echoes of Eternity",
+      "author": "H.G. Wells Jr.",
+      "isbn": "978-6789012345",
+      "genre": "Science Fiction",
+      "description": "A mind-bending exploration of time travel and its consequences on the fabric of human history.",
+      "coverImage": "/images/echoes-of-eternity.jpg",
+      "price": 17.5,
+      "featured": true
+    },
+    {
+      "id": 7,
+      "title": "The Art of Mindful Living",
+      "author": "Zena Yogi",
+      "isbn": "978-7890123456",
+      "genre": "Self-Help",
+      "description": "Practical techniques and wisdom for incorporating mindfulness into everyday life for greater peace and fulfillment.",
+      "coverImage": "/images/mindful-living.jpg",
+      "price": 20.0,
+      "featured": false
+    },
+    {
+      "id": 8,
+      "title": "Legends of the Fallen Kingdom",
+      "author": "R.A. Salvatore II",
+      "isbn": "978-8901234567",
+      "genre": "Fantasy",
+      "description": "An epic tale of magic, betrayal, and redemption in a richly imagined fantasy world on the brink of war.",
+      "coverImage": "/images/fallen-kingdom.jpg",
+      "price": 24.99,
+      "featured": true
+    },
+    {
+      "id": 9,
+      "title": "The Startup Playbook",
+      "author": "Erica Zuckerberg",
+      "isbn": "978-9012345678",
+      "genre": "Business",
+      "description": "Essential strategies and insights for aspiring entrepreneurs looking to launch and grow successful startups.",
+      "coverImage": "/images/startup-playbook.jpg",
+      "price": 26.95,
+      "featured": false
+    },
+    {
+      "id": 10,
+      "title": "Brushstrokes of History",
+      "author": "Leonardo da Vinci III",
+      "isbn": "978-0123456789",
+      "genre": "Art History",
+      "description": "A captivating journey through the evolution of art, from ancient cave paintings to modern masterpieces.",
+      "coverImage": "/images/brushstrokes-history.jpg",
+      "price": 34.99,
+      "featured": false
+    }
+  ]
+}
