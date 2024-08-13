@@ -109,6 +109,116 @@
       "coverImage": "/images/brushstrokes-history.jpg",
       "price": 34.99,
       "featured": false
+    },
+    {
+      "id": 11,
+      "title": "The Silent Symphony",
+      "author": "Aria Nightingale",
+      "isbn": "978-1122334455",
+      "genre": "Music Biography",
+      "description": "The moving story of a deaf composer who revolutionized classical music through felt vibrations and inner soundscapes.",
+      "coverImage": "/images/silent-symphony.jpg",
+      "price": 19.95,
+      "featured": true
+    },
+    {
+      "id": 12,
+      "title": "Bytes of Yesterday",
+      "author": "Retro Gamer",
+      "isbn": "978-2233445566",
+      "genre": "Technology History",
+      "description": "A nostalgic dive into the golden age of video games and personal computing, celebrating the pioneers and innovations that shaped digital culture.",
+      "coverImage": "/images/bytes-of-yesterday.jpg",
+      "price": 23.5,
+      "featured": false
+    },
+    {
+      "id": 13,
+      "title": "Ferment: A Guide to the Ancient Art of Culinary Alchemy",
+      "author": "Bubbles McYeast",
+      "isbn": "978-3344556677",
+      "genre": "Cooking",
+      "description": "Unlock the mysteries of fermentation with this comprehensive guide to creating delicious and healthy fermented foods at home.",
+      "coverImage": "/images/ferment-guide.jpg",
+      "price": 28.0,
+      "featured": false
+    },
+    {
+      "id": 14,
+      "title": "Whiskers of Wisdom",
+      "author": "Tabby McFluff",
+      "isbn": "978-4455667788",
+      "genre": "Humor",
+      "description": "A hilarious collection of life lessons and observations from the perspective of a particularly philosophical house cat.",
+      "coverImage": "/images/whiskers-wisdom.jpg",
+      "price": 13.99,
+      "featured": true
+    },
+    {
+      "id": 15,
+      "title": "The Quantum Garden",
+      "author": "Dr. Flora Quark",
+      "isbn": "978-5566778899",
+      "genre": "Popular Science",
+      "description": "Explore the fascinating connections between quantum physics and plant biology, and discover how the universe's smallest scales influence life itself.",
+      "coverImage": "/images/quantum-garden.jpg",
+      "price": 26.5,
+      "featured": false
+    },
+    {
+      "id": 16,
+      "title": "Nebula's Edge",
+      "author": "Stella Nova",
+      "isbn": "978-6677889900",
+      "genre": "Science Fiction",
+      "description": "In the far reaches of space, a lone explorer stumbles upon a cosmic phenomenon that challenges everything humanity knows about the universe.",
+      "coverImage": "/images/nebulas-edge.jpg",
+      "price": 18.99,
+      "featured": true
+    },
+    {
+      "id": 17,
+      "title": "Mindful Money: The Art of Conscious Investing",
+      "author": "Cash Guru",
+      "isbn": "978-7788990011",
+      "genre": "Personal Finance",
+      "description": "Learn how to align your investments with your values and achieve financial freedom while making a positive impact on the world.",
+      "coverImage": "/images/mindful-money.jpg",
+      "price": 21.95,
+      "featured": false
+    },
+    {
+      "id": 18,
+      "title": "The Labyrinth of Shadows",
+      "author": "Umbra Darkheart",
+      "isbn": "978-8899001122",
+      "genre": "Gothic Horror",
+      "description": "A chilling tale of supernatural encounters and dark secrets hidden within an ancient, maze-like mansion.",
+      "coverImage": "/images/labyrinth-shadows.jpg",
+      "price": 17.5,
+      "featured": false
+    },
+    {
+      "id": 19,
+      "title": "Eco Warriors: Tales from the Green Frontier",
+      "author": "Gaia Champion",
+      "isbn": "978-9900112233",
+      "genre": "Environmental",
+      "description": "Inspiring stories of everyday heroes fighting to protect the planet, from rainforest defenders to ocean conservationists.",
+      "coverImage": "/images/eco-warriors.jpg",
+      "price": 20.0,
+      "featured": true
+    },
+    {
+      "id": 20,
+      "title": "The Flavor Matrix",
+      "author": "Chef Umami",
+      "isbn": "978-0011223344",
+      "genre": "Cooking",
+      "description": "Dive into the science of flavor combinations and learn how to create extraordinary dishes by understanding the chemical affinities between ingredients.",
+      "coverImage": "/images/flavor-matrix.jpg",
+      "price": 32.0,
+      "featured": false
     }
   ]
 }

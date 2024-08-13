@@ -1,10 +1,18 @@
-import { getBooks } from "@/app/lib/data";
+import { getBooksPages, getFilteredBooks } from "@/app/lib/data";
 import { Book } from "@/app/lib/definitions";
 import BookCard from "@/app/ui/book-card";
-import Link from "next/link";
+import Pagination from "@/app/ui/pagination";
 
-export default async function Page() {
-  const books: Book[] = await getBooks();
+export default async function Page({
+  searchParams,
+}: {
+  searchParams?: { query?: string; page?: string };
+}) {
+  const query = searchParams?.query || "";
+  const currentPage = Number(searchParams?.page) || 1;
+  const books: Book[] = await getFilteredBooks(query, currentPage);
+  const totalPages = await getBooksPages();
+
   return (
     <main className="flex flex-col min-h-screen max-w-screen-xl mx-auto px-4 py-10">
       <h1 className="text-3xl md:text-4xl font-title text-primary mb-10">
@@ -26,6 +34,7 @@ export default async function Page() {
           <BookCard key={book.isbn} book={book} />
         ))}
       </ul>
+      <Pagination totalPages={totalPages} />
     </main>
   );
 }
