@@ -15,10 +15,10 @@ export default function FeaturedBook(
   return (
     <li
       key={key}
-      className="border-2 border-transparent hover:bg-secondary/20 hover:border-secondary/50 rounded-md p-4 transition-colors"
+      className="border-2 border-transparent hover:bg-secondary/20 hover:border-secondary/50 rounded-md  transition-colors"
     >
       <Link
-        className="flex gap-6 flex-col md:flex-row md:items-center "
+        className="flex gap-6 p-4 focus:outline-secondary/50 rounded-md flex-col md:flex-row md:items-center "
         href={`/catalog/${isbn}`}
       >
         <div className="aspect-[9/14] shrink-0 w-32 self-center md:selft-start rounded-md bg-secondary"></div>

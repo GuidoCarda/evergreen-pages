@@ -31,8 +31,8 @@ export default function RootLayout({
           </nav>
         </header>
         {children}
-        <footer className="max-w-screen-xl mx-auto">
-          <span>Evergreen Pages</span>
+        <footer className="max-w-screen-xl flex justify-center items-center h-16 mx-auto">
+          <span className="font-title">Evergreen Pages</span>
         </footer>
       </body>
     </html>
