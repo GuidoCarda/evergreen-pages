@@ -2,6 +2,7 @@ import { Book } from "@/app/lib/definitions";
 import { promises as fs } from "fs";
 
 const ITEMS_PER_PAGE = 10;
+const FEATURED_ITEMS = 5;
 
 export async function getBooks() {
   const file = await fs.readFile(
@@ -21,7 +22,7 @@ export async function getFilteredBooks(query: string, currentPage: number) {
 
 export async function getFeaturedBooks() {
   const featured = await getBooks();
-  return featured.filter((book) => book.featured);
+  return featured.filter((book) => book.featured).slice(0, FEATURED_ITEMS);
 }
 
 export async function getBook(isbn: string) {

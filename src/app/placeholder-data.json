@@ -7,7 +7,7 @@
       "isbn": "978-1234567890",
       "genre": "Literary Fiction",
       "description": "A poignant tale of self-discovery set in a small forest town, where the rustling leaves hold secrets of the past.",
-      "coverImage": "/images/whisper-of-leaves.jpg",
+      "coverImage": "https://m.media-amazon.com/images/I/51Hd9zBZJ9L.jpg",
       "price": 16.99,
       "featured": true
     },

@@ -21,7 +21,7 @@ export default function RootLayout({
       >
         <header className="relative h-20 w-full md:flex md:justify-between max-w-screen-xl mx-auto">
           <div className="flex justify-between px-4 items-center h-full">
-            <Link href={"/"} className={`font-title text-lg text-primary`}>
+            <Link href={"/"} className={`font-title text-xl text-primary`}>
               Evergreen
             </Link>
             <button className="h-12 w-12 md:hidden">X</button>
