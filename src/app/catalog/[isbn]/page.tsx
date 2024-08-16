@@ -1,4 +1,5 @@
 import { getBook } from "@/app/lib/data";
+import Breadcrumb from "@/app/ui/breadcrumb";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
@@ -11,6 +12,20 @@ export default async function Page({ params }: { params: { isbn: string } }) {
 
   return (
     <main className="min-h-screen max-w-screen-xl py-20 px-4 mx-auto">
+      <Breadcrumb
+        links={[
+          {
+            href: "/",
+            name: "catalog",
+            isActive: false,
+          },
+          {
+            href: `/catalog/${params.isbn}`,
+            name: book.title,
+            isActive: true,
+          },
+        ]}
+      />
       <section className="md:flex md:items-center md:justify-center md:gap-10 ">
         <div className="w-1/2 mx-auto md:mx-0 aspect-[9/12]  md:max-w-60  mb-10 md:mb-0 rounded-lg  overflow-hidden object-cover  bg-secondary">
           <img src={book.coverImage} alt="book cover image" />
