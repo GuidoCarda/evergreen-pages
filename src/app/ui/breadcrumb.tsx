@@ -12,20 +12,28 @@ export default function Breadcrumb({
   }[];
 }) {
   return (
-    <div className="space-x-4 pb-10">
-      {links.map((link) => {
-        return (
-          <Link
-            key={link.href}
-            href={link.href}
-            className={clsx(`font-title text-primary text-xl capitalize`, {
-              "text-accent": link.isActive,
-            })}
-          >
-            {link.name}
-          </Link>
-        );
-      })}
-    </div>
+    <nav aria-label="Breadcrumb" className="mb-6">
+      <ol className="flex text-xl">
+        {links.map((link, index) => {
+          return (
+            <li key={link.href}>
+              <Link
+                key={link.href}
+                href={link.href}
+                className={clsx(
+                  `font-title capitalize`,
+                  link.isActive ? "text-accent" : "text-primary"
+                )}
+              >
+                {link.name}
+              </Link>
+              {index < links.length - 1 ? (
+                <span className="mx-3 inline-block">/</span>
+              ) : null}
+            </li>
+          );
+        })}
+      </ol>
+    </nav>
   );
 }
