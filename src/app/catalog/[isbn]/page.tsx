@@ -1,6 +1,8 @@
-import { getBook } from "@/app/lib/data";
+import { getBook, getRecommendedBooks } from "@/app/lib/data";
+import BookCard from "@/app/ui/book-card";
 import Breadcrumb from "@/app/ui/breadcrumb";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export default async function Page({ params }: { params: { isbn: string } }) {
@@ -9,6 +11,8 @@ export default async function Page({ params }: { params: { isbn: string } }) {
   if (!book) {
     notFound();
   }
+
+  const recommendedBooks = await getRecommendedBooks(book);
 
   return (
     <main className="min-h-screen max-w-screen-xl py-10 md:py-20 px-4 mx-auto">
@@ -51,8 +55,29 @@ export default async function Page({ params }: { params: { isbn: string } }) {
             <button className="w-full mt-6 h-10 px-6 rounded-md bg-accent hover:opacity-90 text-white inline-flex justify-center items-center md:w-fit">
               Reserve
             </button>
+            <button
+              aria-label="add to wishlist"
+              className="h-10 w-10 rounded-md border-2 grayscale hover:grayscale-0 transition-all duration-200 border-secondary focus:outline-accent ml-2"
+            >
+              ❤️
+            </button>
           </div>
         </section>
+
+        <Link href={`/catalog/${book.isbn}/cover`}>Cover</Link>
+
+        {Boolean(recommendedBooks.length) && (
+          <section className="py-10">
+            <h2 className="font-title text-primary mb-6 text-2xl">
+              You May Also Like
+            </h2>
+            <ul className="grid grid-cols-2 md:grid-cols-4">
+              {recommendedBooks.map((book) => (
+                <BookCard key={book.isbn} book={book} />
+              ))}
+            </ul>
+          </section>
+        )}
       </div>
     </main>
   );

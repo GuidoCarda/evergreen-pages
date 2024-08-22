@@ -35,3 +35,8 @@ export async function getBooksPages() {
   const books = await getBooks();
   return Math.ceil(books.length / ITEMS_PER_PAGE);
 }
+
+export async function getRecommendedBooks(book: Book) {
+  const books = await getBooks();
+  return books.filter((b) => b.genre === book.genre && b.isbn !== book.isbn);
+}
