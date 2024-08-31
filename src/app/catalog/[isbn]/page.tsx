@@ -52,19 +52,22 @@ export default async function Page({ params }: { params: { isbn: string } }) {
             <p className="text-3xl my-4 font-title  text-accent">
               ${book.price}
             </p>
-            <button className="w-full mt-6 h-10 px-6 rounded-md bg-accent hover:opacity-90 text-white inline-flex justify-center items-center md:w-fit">
-              Reserve
-            </button>
-            <button
-              aria-label="add to wishlist"
-              className="h-10 w-10 rounded-md border-2 grayscale hover:grayscale-0 transition-all duration-200 border-secondary focus:outline-accent ml-2"
-            >
-              ❤️
-            </button>
+            <div className="w-full mt-6 flex gap-2 ">
+              <Link
+                href={`/reserve?isbn=${book.isbn}`}
+                className="w-full  h-10 px-6 rounded-md bg-accent hover:opacity-90 text-white inline-flex justify-center items-center md:w-fit"
+              >
+                Add to Reservation
+              </Link>
+              <button
+                aria-label="add to wishlist"
+                className="h-10 w-10 shrink-0  rounded-md border-2 grayscale hover:grayscale-0 transition-all duration-200 border-secondary focus:outline-accent "
+              >
+                ❤️
+              </button>
+            </div>
           </div>
         </section>
-
-        <Link href={`/catalog/${book.isbn}/cover`}>Cover</Link>
 
         {Boolean(recommendedBooks.length) && (
           <section className="py-10">
