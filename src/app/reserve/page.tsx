@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { FormEvent, FormEventHandler } from "react";
 import ReservationForm from "../components/reservation-form";
 import { getBook } from "../lib/data";
 

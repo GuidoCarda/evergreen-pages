@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { merriweather, openSans } from "@/app/ui/fonts";
 import NavLinks from "@/app/ui/nav-links";
 import Link from "next/link";
+import menuIcon from "../../public/menu.svg";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Evergreen Pages",
@@ -24,7 +26,17 @@ export default function RootLayout({
             <Link href={"/"} className={`font-title text-xl text-primary`}>
               Evergreen
             </Link>
-            <button className="h-12 w-12 md:hidden">X</button>
+            <Link
+              href={"/cart"}
+              className="h-12 w-12 grid place-content-center md:hidden"
+            >
+              <Image
+                height={20}
+                width={20}
+                src={menuIcon}
+                alt="hamburguer icon"
+              />
+            </Link>
           </div>
           <nav className="absolute invisible flex w-full py-4 top-full flex-col gap-2  px-4 md:top-0 md:relative md:visible md:flex-row md:items-center md:w-auto md:gap-6 ">
             <NavLinks />
