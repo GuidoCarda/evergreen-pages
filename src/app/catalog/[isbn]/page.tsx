@@ -54,7 +54,9 @@ export default async function Page({ params }: { params: { isbn: string } }) {
             </p>
             <div className="w-full mt-6 flex gap-2 ">
               <Link
-                href={`/reserve?isbn=${book.isbn}`}
+                scroll={false}
+                href={`/cart`}
+                // href={`/reserve?isbn=${book.isbn}`}
                 className="w-full  h-10 px-6 rounded-md bg-accent hover:opacity-90 text-white inline-flex justify-center items-center md:w-fit"
               >
                 Add to Reservation

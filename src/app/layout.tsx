@@ -5,6 +5,7 @@ import NavLinks from "@/app/ui/nav-links";
 import Link from "next/link";
 import menuIcon from "../../public/menu.svg";
 import Image from "next/image";
+import clsx from "clsx";
 
 export const metadata: Metadata = {
   title: "Evergreen Pages",
@@ -13,13 +14,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  cart,
 }: Readonly<{
   children: React.ReactNode;
+  cart: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <body
-        className={`${merriweather.variable} ${openSans.variable} ${openSans.className} antialiased`}
+        className={clsx(
+          `${merriweather.variable} ${openSans.variable} ${openSans.className} antialiased`
+        )}
       >
         <header className="relative h-20 w-full md:flex md:justify-between max-w-screen-xl mx-auto">
           <div className="flex justify-between px-4 items-center h-full">
@@ -43,6 +48,7 @@ export default function RootLayout({
           </nav>
         </header>
         {children}
+        {cart}
         <footer className="max-w-screen-xl flex justify-center items-center h-16 mx-auto">
           <span className="font-title">Evergreen Pages</span>
         </footer>
